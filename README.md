@@ -1,6 +1,13 @@
 # gtx-1650-tflops-performance-benchmark
 In an effort to create a nanogpt clone optimized for GTX 1650, DeepSeek discovered that FP32 performs faster than FP16, despite theoretical performance claims on TechPowerUp and other websites indicating the opposite. Therefore, I requested a script to examine any GPU for these differences.
 
+Theoretical Performance on TechPowerUp
+```
+FP16
+    5.806 TFLOPS (2:1) 
+FP32
+    2.903 TFLOPS 
+```
 ## **RESULTS:**
 ```
 ========================================================================================
