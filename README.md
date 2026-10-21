@@ -1,6 +1,8 @@
 # gtx-1650-tflops-performance-benchmark
 In an effort to create a nanogpt clone optimized for GTX 1650, DeepSeek discovered that FP32 performs faster than FP16, despite theoretical performance claims on TechPowerUp and other websites indicating the opposite. Therefore, I requested a script to examine any GPU for these differences.
-RESULTS:
+
+## **RESULTS:**
+```
 ========================================================================================
 GPU dtype benchmark
 ========================================================================================
@@ -71,3 +73,4 @@ BF16 autocast: 0.81x FP32.
 Raw GEMM at n=4096: FP32 1.681 TFLOPS, FP16 0.368 TFLOPS (0.22x).
 Keep FP32 on this GPU; it is the fastest measured training mode here.
 This verdict is specific to the GPU, driver, PyTorch/CUDA build, and shapes above. Re-run after driver or framework updates.
+```
